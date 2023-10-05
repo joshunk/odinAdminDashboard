@@ -77,3 +77,35 @@ body{
     justify-items: end;
 }
 
+.card{
+    background-color: green;
+    margin: 1rem;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projectSection{
+    grid-column: 1;
+}
+
+.cardWrapper{
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    background-color: pink;
+}
+
+.announcementTitle{
+    color: fuchsia;
+}
+
+.announcementGrid{
+    background-color: orangered;
+    padding: 1rem;
+}
+
+.trendingSection{
+    background-color: brown;
+}

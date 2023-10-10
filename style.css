@@ -109,3 +109,14 @@ body{
 .trendingSection{
     background-color: brown;
 }
+
+.cardIcons{
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.cardIcons img{
+    height: 1.5rem;
+}

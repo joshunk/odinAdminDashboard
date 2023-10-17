@@ -79,7 +79,7 @@ body{
 
 .card{
     background-color: green;
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .main{
@@ -95,6 +95,11 @@ body{
     grid-row: 2 / 4;
     grid-column: 1 / 2;
     background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    justify-content: space-between;
+    margin: 0 1rem;
 }
 
 .announcementTitle{
@@ -110,6 +115,17 @@ body{
     background-color: brown;
 }
 
+.trendingCard{
+    display: flex;
+    gap:1em;
+}
+
+.trendingIcon{
+    border-radius: 50%;
+    height: 4rem;
+    background-color: aqua;
+}
+
 .cardIcons{
     display: flex;
     justify-content: end;
@@ -119,4 +135,8 @@ body{
 
 .cardIcons img{
     height: 1.5rem;
+}
+
+.sideSection{
+    max-width: 18rem;
 }

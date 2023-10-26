@@ -113,17 +113,31 @@ body{
 
 .trendingSection{
     background-color: brown;
+    height: auto;
 }
 
 .trendingCard{
     display: flex;
-    gap:1em;
+    gap: 1em;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
 }
 
 .trendingIcon{
     border-radius: 50%;
     height: 4rem;
-    background-color: aqua;
+    background-color: white;
+    grid-column: 1;
+    grid-row: 1/2;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    padding: 0.25em;
+}
+
+.trendingUser{
+    grid-column: 2;
 }
 
 .cardIcons{

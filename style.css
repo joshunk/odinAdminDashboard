@@ -154,3 +154,31 @@ body{
 .sideSection{
     max-width: 18rem;
 }
+
+/* left column list */
+li > img {
+    height: 1.25rem;
+    filter: invert(100%);
+    vertical-align: middle;
+    padding-right: 0.5rem;
+}
+
+li > p{
+    display: inline;
+}
+
+
+.sidebarNav{
+    list-style: none;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.7rem;
+}
+
+.dashIcon{
+    height: 3.5rem;
+    filter: invert(100%);
+}

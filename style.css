@@ -24,7 +24,7 @@ body{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-rows: 3rem 1.5fr;
+    grid-template-rows: 3rem 6rem;
     background-color: white;
     color: purple;
     border: 2px pink solid;
@@ -40,8 +40,9 @@ body{
 .headerLower{
     display: grid;
     background-color: aquamarine;
-    grid-template-columns: 1fr 7fr 5fr;
-    grid-row: 1fr 1fr;
+    grid-template-columns: 5rem 7fr 5fr;
+    justify-items: start;
+    align-content: center;
 }
 
 .lowerIcon{
@@ -50,13 +51,13 @@ body{
     align-content: center;
     justify-items: center;
 }
-
+/* 
 .headerButtons{
     display: grid;
     grid-row: 1/3;
     grid-column: 3/3;
     grid-template-columns: repeat(3, 1fr);
-}
+} */
 
 
 .main{
@@ -213,4 +214,8 @@ h1{
 .smallProfile{
     height: 3rem;
     background-color: blue;   
+}
+
+.headerIcon{
+    height: 4rem;
 }

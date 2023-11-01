@@ -26,8 +26,6 @@ body{
     display: grid;
     grid-template-rows: 3rem 4.5rem;
     background-color: white;
-    color: purple;
-    border: 2px pink solid;
 }
 
 .headerUpper{
@@ -66,6 +64,7 @@ body{
     background-color: #1992d4;
     color: white;
     font-weight: 600;
+    cursor: pointer;
 
 }
 
@@ -101,8 +100,10 @@ body{
 }
 
 .card{
-    background-color: green;
-    padding: 1rem;
+    background-color: #fff;
+    padding: 1.25rem 1.25rem 0 1.25rem;
+    border-left: .5rem #1992d4 solid;
+
 }
 
 .main{
@@ -117,47 +118,115 @@ body{
 .cardWrapper{
     grid-row: 2 / 4;
     grid-column: 1 / 2;
-    background-color: pink;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 2fr);
+    gap: 1.25rem;
     justify-content: space-between;
-    margin: 0 1rem;
+    margin: 0 1.25rem;
+    height: 75.5vh;
+}
+
+.announcementTitle, .yourProjects, .trendingHeader{
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    color: black;
+}
+
+
+.trendingHeader{
+    margin-bottom: .5rem;
+}
+
+.trendingUser{
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.trendingTitle{
+    font-size: .8rem;
+}
+
+.announcementSubtitle{
+    font-size: .85em;
+    font-weight: 600;
+}
+
+.announcementSubtitle + p{
+    font-size: .75em;
 }
 
 .announcementTitle{
-    color: fuchsia;
-    border: none;
+    margin-bottom: .5rem;
 }
 
+
 .announcementGrid{
-    background-color: orangered;
-    padding: 1rem;
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    display: grid;
+    gap: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .trendingSection{
-    background-color: brown;
-    height: auto;
+    background-color: white;
+    height: 18rem;
+    display: grid;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cardTitle{
+    font-weight: 700;
+}
+
+.cardBody, .trendingTitle, .announcementSubtitle + p{
+    color: #656565;
+
+}
+
+.smallName{
+    font-weight: 800;
+    font-size: .9rem;
+}
+
+.greeting{
+    font-weight: 800;
+    font-size: .7rem;
+}
+
+.bigName{
+    font-size: 1.33rem;
+    font-weight: 800;
+}
+
+
+.cardBody{
+    font-size: .85rem;
 }
 
 .trendingCard{
     display: flex;
-    gap: 1em;
+    gap: .5em;
     align-items: center;
     justify-content: left;
     flex-wrap: wrap;
+
+    
+}
+
+.trendingCard img{
+    margin-left: 1rem;
 }
 
 .trendingIcon{
     border-radius: 50%;
-    height: 4rem;
+    height: 3.5rem;
     background-color: white;
-    grid-column: 1;
-    grid-row: 1/2;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    margin-left: 0.5em;
-    padding: 0.25em;
+    padding-top: .5rem;
 }
 
 .trendingUser{
@@ -167,12 +236,14 @@ body{
 .cardIcons{
     display: flex;
     justify-content: end;
+    align-items: end;
     gap: 1rem;
-    padding: 1rem;
+    padding-top: 1rem;
 }
 
 .cardIcons img{
     height: 1.5rem;
+    margin-top: 1rem;
 }
 
 .sideSection{
@@ -215,6 +286,13 @@ h1{
 
 }
 
+.yourProjects{
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+    margin-top: 1.5rem;
+}
+
+
 .sidebar ul{
     padding-top: 2rem;
     font-weight: 700;
@@ -238,8 +316,21 @@ h1{
 
 .headerIcon{
     height: 4rem;
+    margin-bottom: .5rem;
 }
 
 .header:nth-child(1){
     padding-left: 1rem;
 }
+
+.listBreak{
+    margin-bottom: 2.5rem;
+}
+
+.card, .announcementGrid , .trendingSection{
+    box-shadow: 3px 2px 5px 0px #BCBCBC;
+    border-radius: .5rem;
+}
+
+/* Typography */
+

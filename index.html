@@ -14,14 +14,14 @@
         <div class="upperRight">
           <img class="blackIcon" src="./assets/bell.png" />
           <img class="smallProfile" src="./assets/user.png" />
-          <div>Morgan Oakley</div>
+          <div class="smallName">Morgan Oakley</div>
         </div>
       </div>
       <div class="headerLower">
         <img class="headerIcon" src="./assets/user.png" />
         <div>
-          <p>Hi there,</p>
-          <p>Morgan Oakley (@morgan)</p>
+          <p class="greeting">Hi there,</p>
+          <p class="bigName">Morgan Oakley (@morgan)</p>
         </div>
         <div class="headerButtons">
           <button>New</button>
@@ -58,11 +58,10 @@
           <img src="./assets/note-multiple.svg" />
           <p>Tasks</p>
         </li>
-        <li>
+        <li class="listBreak">
           <img src="./assets/account-group.svg" />
           <p>Communities</p>
         </li>
-        <br /><br />
         <li>
           <img src="./assets/cog.svg" />
           <p>Settings</p>
@@ -225,12 +224,14 @@
       <div class="sideSection">
         <h2 class="announcementTitle">Announcements</h2>
         <div class="announcementGrid">
-          <div class="announcementSubtitle">Site Maintenance</div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-            dolores laborum veritatis est aliquid ad fugit eaque soluta. Enim,
-            pariatur!
-          </p>
+          <div>
+            <div class="announcementSubtitle">Site Maintenance</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              dolores laborum veritatis est aliquid ad fugit eaque soluta. Enim,
+              pariatur!
+            </p>
+          </div>
           <hr />
 
           <div>
@@ -240,8 +241,8 @@
               dolores laborum veritatis est aliquid ad fugit eaque soluta. Enim,
               pariatur!
             </p>
-            <hr />
           </div>
+          <hr />
           <div>
             <div class="announcementSubtitle">Updated Privacy Policy</div>
             <p>
@@ -252,14 +253,13 @@
           </div>
         </div>
         <div class="trendingWrapper">
-          <h2 class="trendingTitle">Trending</h2>
+          <h2 class="trendingHeader">Trending</h2>
           <div class="trendingSection">
             <div class="trendingCard">
               <img class="trendingIcon" src="./assets/dog.png" alt="dog icon" />
               <div>
-                <span class="trendingUser">@FirstItem</span>
-                <br />
-                <span class="trendingTitle">FirstTitle</span>
+                <div class="trendingUser">@FirstItem</div>
+                <div class="trendingTitle">FirstTitle</div>
               </div>
               <div class="trendingCard">
                 <img
@@ -268,9 +268,9 @@
                   alt="dog icon"
                 />
                 <div>
-                  <span class="trendingUser">@SecondItem</span>
-                  <br />
-                  <span class="trendingTitle">SecondTitle</span>
+                  <div class="trendingUser">@SecondItem</div>
+
+                  <div class="trendingTitle">SecondTitle</div>
                 </div>
               </div>
               <div class="trendingCard">
@@ -280,9 +280,8 @@
                   alt="dog icon"
                 />
                 <div>
-                  <span class="trendingUser">@ThirdItem</span>
-                  <br />
-                  <span class="trendingTitle">ThirdTitle</span>
+                  <div class="trendingUser">@ThirdItem</div>
+                  <div class="trendingTitle">ThirdTitle</div>
                 </div>
               </div>
               <div class="trendingCard">
@@ -292,9 +291,9 @@
                   alt="dog icon"
                 />
                 <div>
-                  <span class="trendingUser">@FourthItem</span>
-                  <br />
-                  <span class="trendingTitle">FourthTitle</span>
+                  <div class="trendingUser">@FourthItem</div>
+
+                  <div class="trendingTitle">FourthTitle</div>
                 </div>
               </div>
             </div>
